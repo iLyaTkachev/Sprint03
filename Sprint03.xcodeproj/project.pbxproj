@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		093C47651EA2C15000D80A4B /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47641EA2C15000D80A4B /* MyTableViewCell.m */; };
+		093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47671EA2C33200D80A4B /* HTTPCommunication.m */; };
+		093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C476A1EA2D83C00D80A4B /* DetailViewController.m */; };
 		09D300821EA16E2700A94A4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D300811EA16E2700A94A4B /* main.m */; };
 		09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D300841EA16E2700A94A4B /* AppDelegate.m */; };
 		09D300881EA16E2700A94A4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D300871EA16E2700A94A4B /* ViewController.m */; };
@@ -17,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093C47631EA2C15000D80A4B /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
+		093C47641EA2C15000D80A4B /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
+		093C47661EA2C33200D80A4B /* HTTPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCommunication.h; sourceTree = "<group>"; };
+		093C47671EA2C33200D80A4B /* HTTPCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPCommunication.m; sourceTree = "<group>"; };
+		093C47691EA2D83C00D80A4B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		093C476A1EA2D83C00D80A4B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		09D3007D1EA16E2700A94A4B /* Sprint03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sprint03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D300811EA16E2700A94A4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09D300831EA16E2700A94A4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +73,12 @@
 				09D300841EA16E2700A94A4B /* AppDelegate.m */,
 				09D300861EA16E2700A94A4B /* ViewController.h */,
 				09D300871EA16E2700A94A4B /* ViewController.m */,
+				093C47691EA2D83C00D80A4B /* DetailViewController.h */,
+				093C476A1EA2D83C00D80A4B /* DetailViewController.m */,
+				093C47631EA2C15000D80A4B /* MyTableViewCell.h */,
+				093C47641EA2C15000D80A4B /* MyTableViewCell.m */,
+				093C47661EA2C33200D80A4B /* HTTPCommunication.h */,
+				093C47671EA2C33200D80A4B /* HTTPCommunication.m */,
 				09D300891EA16E2700A94A4B /* Main.storyboard */,
 				09D3008F1EA16E2700A94A4B /* Assets.xcassets */,
 				09D300911EA16E2700A94A4B /* LaunchScreen.storyboard */,
@@ -113,6 +128,7 @@
 				TargetAttributes = {
 					09D3007C1EA16E2700A94A4B = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 27YJ39XKVF;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -155,8 +171,11 @@
 			files = (
 				09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */,
 				09D300881EA16E2700A94A4B /* ViewController.m in Sources */,
+				093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */,
 				09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */,
 				09D300821EA16E2700A94A4B /* main.m in Sources */,
+				093C47651EA2C15000D80A4B /* MyTableViewCell.m in Sources */,
+				093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +295,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27YJ39XKVF;
 				INFOPLIST_FILE = Sprint03/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -287,10 +310,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27YJ39XKVF;
 				INFOPLIST_FILE = Sprint03/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -313,6 +340,7 @@
 				09D300991EA16E2700A94A4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

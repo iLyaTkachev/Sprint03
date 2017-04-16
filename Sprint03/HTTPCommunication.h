@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HTTPCommunication : NSObject
+@interface HTTPCommunication : NSObject <NSURLSessionDownloadDelegate>
+
+@property(nonatomic, copy) void(^myBlock)(NSArray *);
+
+- (void)retrieveURL:(NSURL *)url myBlock:(void(^)(NSArray *))myBlock;
 
 @end
