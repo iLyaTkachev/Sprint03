@@ -82,6 +82,9 @@ NSArray *dataArray;
         detailViewController.titleText = [[dataArray objectAtIndex:indexPath.row] objectForKey:@"title"];
     }
 }
+- (IBAction)updateClick:(id)sender {
+    [self RetrieveInfo];
+}
 
 
 @end

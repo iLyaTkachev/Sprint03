@@ -13,8 +13,7 @@
         <!--Cars List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,7 +31,7 @@
                                         <rect key="frame" x="0.0" y="56" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xzr-di-s0R" id="JkY-R2-azU">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BUP-Bg-twf">
@@ -90,12 +89,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cars List" id="1be-rA-uQn">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="5ny-DY-wYG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="5ny-DY-wYG">
+                            <connections>
+                                <action selector="updateClick:" destination="BYZ-38-t0r" id="7ld-WM-mvr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="3Vw-MO-Fgq" id="Z3M-ZU-YvO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="-559"/>
         </scene>
@@ -126,8 +130,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="myTitleLabel" destination="QEM-1r-7oS" id="05u-C5-bGF"/>
-                        <outlet property="titleLabel" destination="QEM-1r-7oS" id="J9h-Wz-wC3"/>
+                        <outlet property="titleLabel" destination="QEM-1r-7oS" id="k1T-CY-Lsd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qE5-pD-aWp" userLabel="First Responder" sceneMemberID="firstResponder"/>

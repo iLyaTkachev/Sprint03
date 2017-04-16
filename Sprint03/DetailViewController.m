@@ -10,10 +10,10 @@
 
 @interface DetailViewController ()
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
-
 @end
 
 @implementation DetailViewController
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
