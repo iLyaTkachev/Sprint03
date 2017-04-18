@@ -10,9 +10,10 @@
 #import "MyTableViewCell.h"
 #import "HTTPCommunication.h"
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) NSManagedObjectContext *context;
 @end
 
 @implementation ViewController
@@ -23,6 +24,7 @@ NSArray *dataArray;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     dataArray = [[NSArray alloc]init];
+
     [self RetrieveInfo];
 }
 

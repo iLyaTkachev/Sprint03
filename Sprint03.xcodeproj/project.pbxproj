@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09178E451EA6B76500E9002C /* DataFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09178E441EA6B76500E9002C /* DataFromURL.m */; };
+		09178E481EA6C16400E9002C /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 09178E471EA6C16400E9002C /* Car.m */; };
 		093C47651EA2C15000D80A4B /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47641EA2C15000D80A4B /* MyTableViewCell.m */; };
 		093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47671EA2C33200D80A4B /* HTTPCommunication.m */; };
 		093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C476A1EA2D83C00D80A4B /* DetailViewController.m */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09178E431EA6B76500E9002C /* DataFromURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFromURL.h; sourceTree = "<group>"; };
+		09178E441EA6B76500E9002C /* DataFromURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFromURL.m; sourceTree = "<group>"; };
+		09178E461EA6C16400E9002C /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		09178E471EA6C16400E9002C /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		093C47631EA2C15000D80A4B /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		093C47641EA2C15000D80A4B /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		093C47661EA2C33200D80A4B /* HTTPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCommunication.h; sourceTree = "<group>"; };
@@ -79,11 +85,15 @@
 				093C47641EA2C15000D80A4B /* MyTableViewCell.m */,
 				093C47661EA2C33200D80A4B /* HTTPCommunication.h */,
 				093C47671EA2C33200D80A4B /* HTTPCommunication.m */,
+				09178E431EA6B76500E9002C /* DataFromURL.h */,
+				09178E441EA6B76500E9002C /* DataFromURL.m */,
 				09D300891EA16E2700A94A4B /* Main.storyboard */,
 				09D3008F1EA16E2700A94A4B /* Assets.xcassets */,
 				09D300911EA16E2700A94A4B /* LaunchScreen.storyboard */,
 				09D300941EA16E2700A94A4B /* Info.plist */,
 				09D3008C1EA16E2700A94A4B /* Sprint03.xcdatamodeld */,
+				09178E461EA6C16400E9002C /* Car.h */,
+				09178E471EA6C16400E9002C /* Car.m */,
 				09D300801EA16E2700A94A4B /* Supporting Files */,
 			);
 			path = Sprint03;
@@ -169,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09178E481EA6C16400E9002C /* Car.m in Sources */,
 				09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */,
+				09178E451EA6B76500E9002C /* DataFromURL.m in Sources */,
 				09D300881EA16E2700A94A4B /* ViewController.m in Sources */,
 				093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */,
 				09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */,
@@ -303,6 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,6 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = iLyaTkachev.Sprint03;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

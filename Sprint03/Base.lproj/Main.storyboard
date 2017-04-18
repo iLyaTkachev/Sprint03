@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -121,12 +122,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yjv-xo-ah6">
+                                <rect key="frame" x="30" y="120" width="260" height="146.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yjv-xo-ah6" secondAttribute="height" multiplier="16:9" id="Vva-kc-NDk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="QEM-1r-7oS" secondAttribute="trailing" constant="10" id="5W8-eW-Hpp"/>
                             <constraint firstItem="QEM-1r-7oS" firstAttribute="leading" secondItem="OGa-fD-gUa" secondAttribute="leadingMargin" constant="10" id="Id5-LJ-Wnu"/>
+                            <constraint firstAttribute="trailing" secondItem="yjv-xo-ah6" secondAttribute="trailing" constant="30" id="OSN-ko-Ib3"/>
                             <constraint firstItem="QEM-1r-7oS" firstAttribute="top" secondItem="vGm-U4-hmU" secondAttribute="bottom" constant="5" id="d7U-he-y7T"/>
+                            <constraint firstItem="yjv-xo-ah6" firstAttribute="top" secondItem="QEM-1r-7oS" secondAttribute="bottom" constant="30" id="gAf-8G-tkN"/>
+                            <constraint firstItem="yjv-xo-ah6" firstAttribute="leading" secondItem="OGa-fD-gUa" secondAttribute="leading" constant="30" id="x5E-nu-3QG"/>
                         </constraints>
                     </view>
                     <connections>
