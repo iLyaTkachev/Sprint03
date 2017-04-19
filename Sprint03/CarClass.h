@@ -1,5 +1,5 @@
 //
-//  DataFromURL.h
+//  CarClass.h
 //  Sprint03
 //
 //  Created by iLya Tkachev on 4/19/17.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DataFromURL : NSObject
+@interface CarClass : NSObject
 
 @end
