@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09178E451EA6B76500E9002C /* DataFromURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 09178E441EA6B76500E9002C /* DataFromURL.m */; };
-		09178E481EA6C16400E9002C /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 09178E471EA6C16400E9002C /* Car.m */; };
 		093C47651EA2C15000D80A4B /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47641EA2C15000D80A4B /* MyTableViewCell.m */; };
 		093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C47671EA2C33200D80A4B /* HTTPCommunication.m */; };
 		093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093C476A1EA2D83C00D80A4B /* DetailViewController.m */; };
@@ -19,13 +17,10 @@
 		09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D3008C1EA16E2700A94A4B /* Sprint03.xcdatamodeld */; };
 		09D300901EA16E2700A94A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D3008F1EA16E2700A94A4B /* Assets.xcassets */; };
 		09D300931EA16E2700A94A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D300911EA16E2700A94A4B /* LaunchScreen.storyboard */; };
+		09DAA65B1EA763AF006210B2 /* CarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DAA65A1EA763AF006210B2 /* CarClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09178E431EA6B76500E9002C /* DataFromURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFromURL.h; sourceTree = "<group>"; };
-		09178E441EA6B76500E9002C /* DataFromURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFromURL.m; sourceTree = "<group>"; };
-		09178E461EA6C16400E9002C /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		09178E471EA6C16400E9002C /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		093C47631EA2C15000D80A4B /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
 		093C47641EA2C15000D80A4B /* MyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewCell.m; sourceTree = "<group>"; };
 		093C47661EA2C33200D80A4B /* HTTPCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPCommunication.h; sourceTree = "<group>"; };
@@ -43,6 +38,8 @@
 		09D3008F1EA16E2700A94A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D300921EA16E2700A94A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D300941EA16E2700A94A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DAA6591EA763AF006210B2 /* CarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarClass.h; sourceTree = "<group>"; };
+		09DAA65A1EA763AF006210B2 /* CarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,16 +82,14 @@
 				093C47641EA2C15000D80A4B /* MyTableViewCell.m */,
 				093C47661EA2C33200D80A4B /* HTTPCommunication.h */,
 				093C47671EA2C33200D80A4B /* HTTPCommunication.m */,
-				09178E431EA6B76500E9002C /* DataFromURL.h */,
-				09178E441EA6B76500E9002C /* DataFromURL.m */,
 				09D300891EA16E2700A94A4B /* Main.storyboard */,
 				09D3008F1EA16E2700A94A4B /* Assets.xcassets */,
 				09D300911EA16E2700A94A4B /* LaunchScreen.storyboard */,
 				09D300941EA16E2700A94A4B /* Info.plist */,
 				09D3008C1EA16E2700A94A4B /* Sprint03.xcdatamodeld */,
-				09178E461EA6C16400E9002C /* Car.h */,
-				09178E471EA6C16400E9002C /* Car.m */,
 				09D300801EA16E2700A94A4B /* Supporting Files */,
+				09DAA6591EA763AF006210B2 /* CarClass.h */,
+				09DAA65A1EA763AF006210B2 /* CarClass.m */,
 			);
 			path = Sprint03;
 			sourceTree = "<group>";
@@ -179,9 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09178E481EA6C16400E9002C /* Car.m in Sources */,
 				09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */,
-				09178E451EA6B76500E9002C /* DataFromURL.m in Sources */,
+				09DAA65B1EA763AF006210B2 /* CarClass.m in Sources */,
 				09D300881EA16E2700A94A4B /* ViewController.m in Sources */,
 				093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */,
 				09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */,

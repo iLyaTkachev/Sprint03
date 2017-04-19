@@ -11,6 +11,7 @@
 #import "HTTPCommunication.h"
 #import "DetailViewController.h"
 #import "AppDelegate.h"
+#import "CarClass.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSManagedObjectContext *context;
@@ -24,7 +25,8 @@ NSArray *dataArray;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     dataArray = [[NSArray alloc]init];
-
+    //AppDelegate* delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    //self.context = delegate.managedObjectContext;
     [self RetrieveInfo];
 }
 
