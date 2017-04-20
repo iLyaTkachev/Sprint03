@@ -11,23 +11,36 @@
 #import "HTTPCommunication.h"
 #import "DetailViewController.h"
 #import "AppDelegate.h"
-#import "CarClass.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
 @end
 
 @implementation ViewController
 
 NSArray *dataArray;
+NSEntityDescription *entity;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     dataArray = [[NSArray alloc]init];
-    //AppDelegate* delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    //self.context = delegate.managedObjectContext;
-    [self RetrieveInfo];
+    AppDelegate* delegate = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    self.context = delegate.managedObjectContext;
+    entity = [NSEntityDescription entityForName:@"Car" inManagedObjectContext:self.context];
+    
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    request.entity = entity;
+    //NSPredicate *predicate = [NSPredicate predicateWithFormat:@"ID = %d", @"00001"];
+    //request.predicate = predicate;
+    NSError *error = nil;
+    NSArray *objs = [self.context executeFetchRequest:request error:&error];
+    for(NSManagedObject *object in objs){
+        NSLog(@"Found %@", [object valueForKey:@"mark"]);
+    }
+
+    //[self retrieveInfo];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,7 +78,7 @@ NSArray *dataArray;
     return cell;
 }
 
-- (void)RetrieveInfo
+- (void)retrieveInfo
 {
     HTTPCommunication *http = [[HTTPCommunication alloc] init];
     NSURL *url = [NSURL URLWithString:@"https://raw.githubusercontent.com/iLyaTkachev/Sprint02/master/Sprint01ARC/File.json"];
@@ -74,7 +87,8 @@ NSArray *dataArray;
     [http retrieveURL:url myBlock:^(NSArray *array)
      {
          dataArray=array;
-         [self.myTableView reloadData];
+         [self addCars];
+         //[self.myTableView reloadData];
      }];
     
 }
@@ -87,8 +101,27 @@ NSArray *dataArray;
     }
 }
 - (IBAction)updateClick:(id)sender {
-    [self RetrieveInfo];
+
+    [self retrieveInfo];
 }
+
+-(void) checkCars
+{
+    
+}
+
+-(void) addCars
+{
+    NSError *error=nil;
+    for (int i=0;i<dataArray.count; i++) {
+        NSManagedObject *newCar=[[NSManagedObject alloc]initWithEntity:entity insertIntoManagedObjectContext:self.context];
+        [newCar setValue:[[dataArray objectAtIndex:i] objectForKey:@"title"] forKey:@"mark"];
+        [newCar setValue:[[dataArray objectAtIndex:i] objectForKey	:@"subtitle"] forKey:@"model"];
+        [newCar setValue:[[dataArray objectAtIndex:i] objectForKey	:@"image_name"] forKey:@"logoImage"];
+        [newCar setValue:[[dataArray objectAtIndex:i] objectForKey	:@"ID"] forKey:@"carID"];
+        [self.context save:&error];
+    }
+    }
 
 
 @end

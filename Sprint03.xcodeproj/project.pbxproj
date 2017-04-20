@@ -14,10 +14,10 @@
 		09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D300841EA16E2700A94A4B /* AppDelegate.m */; };
 		09D300881EA16E2700A94A4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09D300871EA16E2700A94A4B /* ViewController.m */; };
 		09D3008B1EA16E2700A94A4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D300891EA16E2700A94A4B /* Main.storyboard */; };
-		09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09D3008C1EA16E2700A94A4B /* Sprint03.xcdatamodeld */; };
 		09D300901EA16E2700A94A4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09D3008F1EA16E2700A94A4B /* Assets.xcassets */; };
 		09D300931EA16E2700A94A4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D300911EA16E2700A94A4B /* LaunchScreen.storyboard */; };
-		09DAA65B1EA763AF006210B2 /* CarClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DAA65A1EA763AF006210B2 /* CarClass.m */; };
+		09DAA6981EA79D89006210B2 /* Car+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DAA6921EA79CFC006210B2 /* Car+CoreDataClass.m */; };
+		09DAA6991EA79D91006210B2 /* Car+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DAA6941EA79CFC006210B2 /* Car+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,10 @@
 		09D3008F1EA16E2700A94A4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09D300921EA16E2700A94A4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09D300941EA16E2700A94A4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		09DAA6591EA763AF006210B2 /* CarClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarClass.h; sourceTree = "<group>"; };
-		09DAA65A1EA763AF006210B2 /* CarClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarClass.m; sourceTree = "<group>"; };
+		09DAA6911EA79CFC006210B2 /* Car+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataClass.h"; sourceTree = "<group>"; };
+		09DAA6921EA79CFC006210B2 /* Car+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataClass.m"; sourceTree = "<group>"; };
+		09DAA6931EA79CFC006210B2 /* Car+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Car+CoreDataProperties.h"; sourceTree = "<group>"; };
+		09DAA6941EA79CFC006210B2 /* Car+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Car+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,10 @@
 		09D3007F1EA16E2700A94A4B /* Sprint03 */ = {
 			isa = PBXGroup;
 			children = (
+				09DAA6911EA79CFC006210B2 /* Car+CoreDataClass.h */,
+				09DAA6921EA79CFC006210B2 /* Car+CoreDataClass.m */,
+				09DAA6931EA79CFC006210B2 /* Car+CoreDataProperties.h */,
+				09DAA6941EA79CFC006210B2 /* Car+CoreDataProperties.m */,
 				09D300831EA16E2700A94A4B /* AppDelegate.h */,
 				09D300841EA16E2700A94A4B /* AppDelegate.m */,
 				09D300861EA16E2700A94A4B /* ViewController.h */,
@@ -88,8 +94,6 @@
 				09D300941EA16E2700A94A4B /* Info.plist */,
 				09D3008C1EA16E2700A94A4B /* Sprint03.xcdatamodeld */,
 				09D300801EA16E2700A94A4B /* Supporting Files */,
-				09DAA6591EA763AF006210B2 /* CarClass.h */,
-				09DAA65A1EA763AF006210B2 /* CarClass.m */,
 			);
 			path = Sprint03;
 			sourceTree = "<group>";
@@ -174,14 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09D3008E1EA16E2700A94A4B /* Sprint03.xcdatamodeld in Sources */,
-				09DAA65B1EA763AF006210B2 /* CarClass.m in Sources */,
+				09DAA6981EA79D89006210B2 /* Car+CoreDataClass.m in Sources */,
 				09D300881EA16E2700A94A4B /* ViewController.m in Sources */,
+				093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */,
+				09DAA6991EA79D91006210B2 /* Car+CoreDataProperties.m in Sources */,
 				093C47681EA2C33200D80A4B /* HTTPCommunication.m in Sources */,
 				09D300851EA16E2700A94A4B /* AppDelegate.m in Sources */,
 				09D300821EA16E2700A94A4B /* main.m in Sources */,
 				093C47651EA2C15000D80A4B /* MyTableViewCell.m in Sources */,
-				093C476B1EA2D83C00D80A4B /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

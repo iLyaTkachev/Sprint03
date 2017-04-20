@@ -34,6 +34,7 @@
     NSData *data = [NSData dataWithContentsOfURL:location];
     NSError *error = nil;
     NSArray *dataArray = [NSJSONSerialization JSONObjectWithData: data options:NSJSONReadingMutableContainers error:&error];//parse in other thread
+
     if (!error)
     {
         // гарантируем, что вызов successBlock происходит в главном потоке
