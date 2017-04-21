@@ -104,15 +104,15 @@ NSEntityDescription *entity;
     }
 }
 - (IBAction)updateClick:(id)sender {
-    [self checkCars];
-    //[self retrieveInfo];
+    //[self checkCars];
+    [self retrieveInfo];
 }
 
 -(void) checkCars
 {
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     request.entity = [NSEntityDescription entityForName:@"Car" inManagedObjectContext:self.context];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"carID = %d", @"00001"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"carID = %@", @"00004"];
     request.predicate = predicate;
     NSError *error = nil;
     NSArray *objs = [self.context executeFetchRequest:request error:&error];
