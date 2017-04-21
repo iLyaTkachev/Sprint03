@@ -22,16 +22,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sprint03/ViewController.m"
-            timestampString = "514413797.36238"
+            timestampString = "514470684.150891"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-checkCars"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
